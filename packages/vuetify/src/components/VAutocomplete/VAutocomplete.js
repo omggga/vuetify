@@ -341,12 +341,6 @@ export default VSelect.extend({
       // has had time to update
       this.$nextTick(() => {
         this.internalSearch = (
-          this.multiple &&
-          this.internalSearch &&
-          this.isMenuActive
-        )
-          ? this.internalSearch
-          : (
             !this.selectedItems.length ||
             this.multiple ||
             this.hasSlot
